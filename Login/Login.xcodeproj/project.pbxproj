@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		46476ABE24EFDFC5001C4434 /* Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46476AB424EFDFC5001C4434 /* Login.framework */; };
+		46476ACF24EFDFED001C4434 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46476ACE24EFDFED001C4434 /* LoginUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +26,7 @@
 		46476AB824EFDFC5001C4434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46476ABD24EFDFC5001C4434 /* LoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46476AC424EFDFC5001C4434 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46476ACE24EFDFED001C4434 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				46476AB824EFDFC5001C4434 /* Info.plist */,
+				46476ACE24EFDFED001C4434 /* LoginUseCase.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				TargetAttributes = {
 					46476AB324EFDFC5001C4434 = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 					46476ABC24EFDFC5001C4434 = {
 						CreatedOnToolsVersion = 12.0;
@@ -187,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46476ACF24EFDFED001C4434 /* LoginUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +338,7 @@
 		46476AC924EFDFC5001C4434 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = GB5Q295YX5;
@@ -349,6 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.christophebugnon.Login;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -357,6 +364,7 @@
 		46476ACA24EFDFC5001C4434 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = GB5Q295YX5;
@@ -381,6 +389,7 @@
 		46476ACC24EFDFC5001C4434 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GB5Q295YX5;
 				INFOPLIST_FILE = LoginTests/Info.plist;
@@ -399,6 +408,7 @@
 		46476ACD24EFDFC5001C4434 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GB5Q295YX5;
 				INFOPLIST_FILE = LoginTests/Info.plist;
