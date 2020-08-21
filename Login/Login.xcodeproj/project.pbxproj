@@ -14,6 +14,8 @@
 		46476AD524EFE170001C4434 /* FirebaseAnalyticsLoginTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46476AD424EFE170001C4434 /* FirebaseAnalyticsLoginTracker.swift */; };
 		46476AD724EFE297001C4434 /* LoginUseCaseOutputComposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46476AD624EFE297001C4434 /* LoginUseCaseOutputComposerTests.swift */; };
 		46476AD924EFE2AC001C4434 /* LoginUseCaseOutputComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46476AD824EFE2AC001C4434 /* LoginUseCaseOutputComposer.swift */; };
+		46476ADB24EFE5C5001C4434 /* LoginUseCaseFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46476ADA24EFE5C5001C4434 /* LoginUseCaseFactoryTests.swift */; };
+		46476ADD24EFE5D6001C4434 /* LoginUseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46476ADC24EFE5D6001C4434 /* LoginUseCaseFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 		46476AD424EFE170001C4434 /* FirebaseAnalyticsLoginTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsLoginTracker.swift; sourceTree = "<group>"; };
 		46476AD624EFE297001C4434 /* LoginUseCaseOutputComposerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseOutputComposerTests.swift; sourceTree = "<group>"; };
 		46476AD824EFE2AC001C4434 /* LoginUseCaseOutputComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseOutputComposer.swift; sourceTree = "<group>"; };
+		46476ADA24EFE5C5001C4434 /* LoginUseCaseFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseFactoryTests.swift; sourceTree = "<group>"; };
+		46476ADC24EFE5D6001C4434 /* LoginUseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,7 @@
 				46476AD224EFE113001C4434 /* CrashlyticsLoginTracker.swift */,
 				46476AD424EFE170001C4434 /* FirebaseAnalyticsLoginTracker.swift */,
 				46476AD824EFE2AC001C4434 /* LoginUseCaseOutputComposer.swift */,
+				46476ADC24EFE5D6001C4434 /* LoginUseCaseFactory.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -94,6 +99,7 @@
 			children = (
 				46476AC424EFDFC5001C4434 /* Info.plist */,
 				46476AD624EFE297001C4434 /* LoginUseCaseOutputComposerTests.swift */,
+				46476ADA24EFE5C5001C4434 /* LoginUseCaseFactoryTests.swift */,
 			);
 			path = LoginTests;
 			sourceTree = "<group>";
@@ -211,6 +217,7 @@
 				46476AD924EFE2AC001C4434 /* LoginUseCaseOutputComposer.swift in Sources */,
 				46476AD124EFE0A9001C4434 /* LoginPresenter.swift in Sources */,
 				46476ACF24EFDFED001C4434 /* LoginUseCase.swift in Sources */,
+				46476ADD24EFE5D6001C4434 /* LoginUseCaseFactory.swift in Sources */,
 				46476AD324EFE113001C4434 /* CrashlyticsLoginTracker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46476ADB24EFE5C5001C4434 /* LoginUseCaseFactoryTests.swift in Sources */,
 				46476AD724EFE297001C4434 /* LoginUseCaseOutputComposerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

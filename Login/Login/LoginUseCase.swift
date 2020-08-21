@@ -12,7 +12,7 @@ public protocol LoginUseCaseOutput {
     func loginFailed()
 }
 
-final class LoginUseCase {
+public final class LoginUseCase {
     let output: LoginUseCaseOutput
     
     init(output: LoginUseCaseOutput) {
