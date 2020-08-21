@@ -12,6 +12,8 @@
 		46476AD124EFE0A9001C4434 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46476AD024EFE0A9001C4434 /* LoginPresenter.swift */; };
 		46476AD324EFE113001C4434 /* CrashlyticsLoginTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46476AD224EFE113001C4434 /* CrashlyticsLoginTracker.swift */; };
 		46476AD524EFE170001C4434 /* FirebaseAnalyticsLoginTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46476AD424EFE170001C4434 /* FirebaseAnalyticsLoginTracker.swift */; };
+		46476AD724EFE297001C4434 /* LoginUseCaseOutputComposerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46476AD624EFE297001C4434 /* LoginUseCaseOutputComposerTests.swift */; };
+		46476AD924EFE2AC001C4434 /* LoginUseCaseOutputComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46476AD824EFE2AC001C4434 /* LoginUseCaseOutputComposer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +35,8 @@
 		46476AD024EFE0A9001C4434 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		46476AD224EFE113001C4434 /* CrashlyticsLoginTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrashlyticsLoginTracker.swift; sourceTree = "<group>"; };
 		46476AD424EFE170001C4434 /* FirebaseAnalyticsLoginTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAnalyticsLoginTracker.swift; sourceTree = "<group>"; };
+		46476AD624EFE297001C4434 /* LoginUseCaseOutputComposerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseOutputComposerTests.swift; sourceTree = "<group>"; };
+		46476AD824EFE2AC001C4434 /* LoginUseCaseOutputComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseOutputComposer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 				46476AD024EFE0A9001C4434 /* LoginPresenter.swift */,
 				46476AD224EFE113001C4434 /* CrashlyticsLoginTracker.swift */,
 				46476AD424EFE170001C4434 /* FirebaseAnalyticsLoginTracker.swift */,
+				46476AD824EFE2AC001C4434 /* LoginUseCaseOutputComposer.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -88,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				46476AC424EFDFC5001C4434 /* Info.plist */,
+				46476AD624EFE297001C4434 /* LoginUseCaseOutputComposerTests.swift */,
 			);
 			path = LoginTests;
 			sourceTree = "<group>";
@@ -156,6 +162,7 @@
 					};
 					46476ABC24EFDFC5001C4434 = {
 						CreatedOnToolsVersion = 12.0;
+						LastSwiftMigration = 1200;
 					};
 				};
 			};
@@ -201,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46476AD524EFE170001C4434 /* FirebaseAnalyticsLoginTracker.swift in Sources */,
+				46476AD924EFE2AC001C4434 /* LoginUseCaseOutputComposer.swift in Sources */,
 				46476AD124EFE0A9001C4434 /* LoginPresenter.swift in Sources */,
 				46476ACF24EFDFED001C4434 /* LoginUseCase.swift in Sources */,
 				46476AD324EFE113001C4434 /* CrashlyticsLoginTracker.swift in Sources */,
@@ -211,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46476AD724EFE297001C4434 /* LoginUseCaseOutputComposerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GB5Q295YX5;
 				INFOPLIST_FILE = LoginTests/Info.plist;
@@ -412,6 +422,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.christophebugnon.LoginTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -421,6 +432,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GB5Q295YX5;
 				INFOPLIST_FILE = LoginTests/Info.plist;
